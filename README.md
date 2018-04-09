@@ -1,8 +1,8 @@
 # JsBridge
 
-  现在H5嵌入 Android App开发中已是一种潮流，经常会遇到H5与java交互的场景，本文根据 https://github.com/lzyzsd/JsBridge/ 封装了可以同步Cookie，header ，带有加载进度，以及下拉刷新的JsBridge，并解决了部分问题。
+###  现在H5嵌入 Android App开发中已是一种潮流，经常会遇到H5与java交互的场景，本文根据 https://github.com/lzyzsd/JsBridge/ 封装了可以同步Cookie，header ，带有加载进度，以及下拉刷新的JsBridge，并解决了部分问题。
   
-  
+  ```java
         RefreshProgressWebView refreshProgressWebView = (RefreshProgressWebView) findViewById(R.id.rpwv);
         // 注册 java 调用 js 中名为 jsHandlerName 的 方法
         refreshProgressWebView.registerJsHandler("jsHandlerName", new JsHandler() {
@@ -27,3 +27,4 @@
         //添加header
         refreshProgressWebView.setHeader("key","value");
         refreshProgressWebView.load("https://www.baidu.com");
+ ```
